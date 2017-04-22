@@ -1,9 +1,11 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		responsiveWidth: 900,
-		menu: '#menu',
+		//menu: '#menu',
 		anchors: ['firstPage', 'secondPage', '3rdPage'],
-		sectionsColor: ['#fff', '#818181', '#fff'],
+		sectionsColor: ['#4E4E4E', '#818181', '#4E4E4E', '#818181', '#4E4E4E', '#818181', '#4E4E4E'],
+		navigation: true,
+		navigationPosition: 'left',
 		hybrid:true,
     	fitToSection: false,
 		autoScrolling: false,
@@ -14,5 +16,10 @@ $(document).ready(function() {
 		},
 		onLeave: function(index, nextIndex, direction){
 		},
+	
+		
 	});
-});
+	
+	
+});//end document.ready function
+
